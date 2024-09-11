@@ -1,0 +1,7 @@
+StorageFormatVersion=1
+nRows=1
+nColumns=5
+inDegrees=no
+endheader
+time        chest_rot_x   chest_rot_y   chest_rot_z   chest_rot_w
+0.000000    0.12068562    -0.01827327   0.00137277    0.99252163

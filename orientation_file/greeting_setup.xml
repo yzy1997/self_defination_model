@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSimDocument Version="40500">
+	<IMUInverseKinematicsTool>
+		<!--Name of the directory where results are written. Be default this is the directory in which the setup file is be  executed.-->
+		<results_directory>E:\data\opensim\self_defination_model\orientation_file</results_directory>
+		<!--The time range for the study.-->
+		<time_range>0 2.8269230769230713</time_range>
+		<!--Name of the resulting inverse kinematics motion (.mot) file.-->
+		<output_motion_file>greeting_motion.mot</output_motion_file>
+		<!--Flag (true or false) indicating whether or not to report errors from the inverse kinematics solution. Default is true.-->
+		<report_errors>false</report_errors>
+		<!--Space fixed Euler angles (XYZ order) from IMU Space to OpenSim. Default to (0, 0, 0).-->
+		<sensor_to_opensim_rotations>1.5707963267948966 1.5707963267948966 0</sensor_to_opensim_rotations>
+		<!--Name/path to a .sto file of sensor frame orientations as quaternions.-->
+		<orientations_file>greeting_orientation.sto</orientations_file>
+		<!--Set of orientation weights identified by orientation name with weight being a positive scalar. If not provided, all IMU orientations are tracked with weight 1.0.-->
+		<OrientationWeightSet name="orientation_weights">
+			<objects>
+				<OrientationWeight name="torso_imu">
+					<!--Orientation reference weight.-->
+					<weight>1</weight>
+				</OrientationWeight>
+				<OrientationWeight name="humerus_r_imu">
+					<!--Orientation reference weight.-->
+					<weight>1</weight>
+				</OrientationWeight>
+				<OrientationWeight name="humerus_l_imu">
+					<!--Orientation reference weight.-->
+					<weight>1</weight>
+				</OrientationWeight>
+				<OrientationWeight name="radius_r_imu">
+					<!--Orientation reference weight.-->
+					<weight>1</weight>
+				</OrientationWeight>
+				<OrientationWeight name="radius_l_imu">
+					<!--Orientation reference weight.-->
+					<weight>1</weight>
+				</OrientationWeight>
+				<OrientationWeight name="pelvis_imu">
+					<!--Orientation reference weight.-->
+					<weight>1</weight>
+				</OrientationWeight>
+				<OrientationWeight name="femur_r_imu">
+					<!--Orientation reference weight.-->
+					<weight>1</weight>
+				</OrientationWeight>
+				<OrientationWeight name="femur_l_imu">
+					<!--Orientation reference weight.-->
+					<weight>1</weight>
+				</OrientationWeight>
+				<OrientationWeight name="tibia_r_imu">
+					<!--Orientation reference weight.-->
+					<weight>1</weight>
+				</OrientationWeight>
+				<OrientationWeight name="tibia_l_imu">
+					<!--Orientation reference weight.-->
+					<weight>1</weight>
+				</OrientationWeight>
+			</objects>
+			<groups />
+		</OrientationWeightSet>
+	</IMUInverseKinematicsTool>
+</OpenSimDocument>
